@@ -1,0 +1,4 @@
+numpy
+SpeechRecognition
+openai-whisper
+ffmpeg
