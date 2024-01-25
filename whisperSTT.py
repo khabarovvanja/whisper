@@ -6,10 +6,10 @@ model = whisper.load_model('base')
 
 def main():
     """
-    Функция распознавания речи в реальном времени
+    Real-time speech recognition function
     """
     r = sr.Recognizer()
-    print('\033[32mГоворите...\033[0m')
+    print('\033[32mSpeak...\033[0m')
     while True:
         with sr.Microphone(sample_rate=16000) as source:
             audio = r.listen(source).get_raw_data()
